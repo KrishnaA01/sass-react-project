@@ -1,0 +1,33 @@
+@import './color';
+@import './buttons';
+
+.main-section {
+    background: Linear-gradient(to right bottom, rgba(252,104,18,0.587),rgba(252,96,690,0.363)), url(../assets/hangout.svg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+
+
+    .content {
+        margin: 12rem;
+        text-align: center;
+        h1 {
+            font-size: 4rem;
+            color: $main-color;
+        }
+        button {
+            @include button;
+            }
+    }
+    .bottom-text {
+        margin-left: 1rem;
+        
+        p {
+            color: $main-color;
+            
+        }
+    }
+
+       
+}
