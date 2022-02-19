@@ -6,6 +6,7 @@ import ImageCard from './components/ImageCard';
 import CreamSection from './components/CreamSection';
 import Carousel from './components/Carousel';
 import { Data }from './components/Data'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ImageCard/>
       <CreamSection/>
       <Carousel slides = {Data} />
+      <Footer />
     </div>
   );
 }

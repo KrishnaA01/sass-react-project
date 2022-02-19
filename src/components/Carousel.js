@@ -15,13 +15,13 @@ const Carousel = ({ slides }) => {
     <div className="carousel-main">
 
             <div className="arrows">
-                <ArrowLeftOutlined  className='left'/>
-                <ArrowRightOutlined className='right'/>
+                <ArrowLeftOutlined  className='left' onClick={()=>setCurrent(current===0 ? length - 1 : current - 1 )} />
+                <ArrowRightOutlined className='right' onClick={()=>setCurrent(current=== length - 1 ? 0 : current + 1 )}/>
             </div>
 
         {Data.map((slide,index)=>{
             return(
-                <div className={index === current ?'carousel-active' : 'carousel'} >
+                <div className={index === current ?'carousel active' : 'carousel'} >
 
                         {index === current && (
                             <div className={slide.className} > 
