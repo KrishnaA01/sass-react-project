@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Section.scss';
 
 
-export const Section = () => {
+const Section = () => {
   return (
    <section className="main-section">
        <div className="content">
@@ -16,3 +16,4 @@ export const Section = () => {
    </section>
   )
 }
+export default Section;
